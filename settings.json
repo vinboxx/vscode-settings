@@ -1,11 +1,8 @@
 {
-    "workbench.colorTheme": "wild-cherry",
     "editor.renderWhitespace": "boundary",
-    "files.trimTrailingWhitespace": true,
-    "terminal.integrated.fontFamily": "Source Code Pro for Powerline, Source Code Pro",
-    "terminal.integrated.fontSize": 14,
     "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
-    "typescript.npm": "/usr/local/bin/npm",
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
     "search.exclude": {
         "**/*.map": true,
         "**/.DS_Store": true,
@@ -17,5 +14,9 @@
         "**/build/server": true,
         "**/node_modules": true,
         "**/tmp": true
-    }
+    },
+    "terminal.integrated.fontFamily": "Source Code Pro for Powerline, Source Code Pro",
+    "terminal.integrated.fontSize": 14,
+    "typescript.npm": "/usr/local/bin/npm",
+    "workbench.colorTheme": "wild-cherry"
 }
