@@ -1,8 +1,12 @@
 {
+    "editor.formatOnPaste": true,
+    "editor.multiCursorModifier": "ctrlCmd",
     "editor.renderWhitespace": "boundary",
+    "editor.snippetSuggestions": "top",
     "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
     "search.exclude": {
         "**/*.map": true,
         "**/.DS_Store": true,
@@ -15,6 +19,7 @@
         "**/node_modules": true,
         "**/tmp": true
     },
+    "sublimeTextKeymap.promptV3Features": true,
     "terminal.integrated.fontFamily": "Source Code Pro for Powerline, Source Code Pro",
     "terminal.integrated.fontSize": 14,
     "typescript.npm": "/usr/local/bin/npm",
