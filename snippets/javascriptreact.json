@@ -51,6 +51,10 @@
 			"body": "this.setState({$0})",
 			"description": "Performs a shallow merge of nextState into current state"
 		},
+		"module.exports": {
+			"prefix": "me",
+			"body": "module.exports = ${1:name}"
+		},
 		"Object.assign": {
 			"prefix": "oa",
 			"body": "Object.assign(${1:dest}, ${2:source})",
@@ -61,21 +65,6 @@
 			"body": "Object.keys(${1:obj})",
 			"description": "Object.keys"
 		},
-		"Promise.all": {
-			"prefix": "pa",
-			"body": "Promise.all([${1:value}])",
-			"description": "Promise.all"
-		},
-		"Promise.resolve": {
-			"prefix": "prs",
-			"body": "Promise.resolve(${1:value})",
-			"description": "Promise.resolve"
-		},
-		"Promise.reject": {
-			"prefix": "prj",
-			"body": "Promise.reject(${1:value})",
-			"description": "Promise.reject"
-		},
 		"reactClassCompoment": {
 			"prefix": "rcc",
 			"body": "import React, {Component} from 'react'\n\nclass ${1:componentName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}\n}\n\nexport default ${1:componentName}",
@@ -85,6 +74,10 @@
 			"prefix": "rccp",
 			"body": "import React from 'react';\nimport PropTypes from 'prop-types';\n\nclass ${1:componentName} extends React.Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:componentName}.propTypes = {\n\n};\n\nexport default ${1:componentName};",
 			"description": "Creates a React component class with PropTypes and ES6 module system"
+		},
+		"const module = require('module')": {
+			"prefix": "req",
+			"body": "const ${1:module} = require('${1:module}')"
 		},
 		"setTimeout": {
 			"prefix": "st",
