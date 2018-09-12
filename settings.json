@@ -1,4 +1,5 @@
 {
+    "breadcrumbs.enabled": false,
     "editor.formatOnPaste": true,
     "editor.hover.delay": 1000,
     "editor.hover.sticky": false,
@@ -12,10 +13,23 @@
     "files.associations": {
         ".*rc": "jsonc"
     },
+    "files.exclude": {
+        "/.git": true,
+        "/.DS_Store": true,
+        "/node_modules": true,
+        "/node_modules/": true
+    },
     "files.insertFinalNewline": true,
+    "files.watcherExclude": {
+        "/node_modules/": true
+    },
     "files.trimTrailingWhitespace": true,
+    "files.useExperimentalFileWatcher": true,
     "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
     "javascript.preferences.quoteStyle": "single",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "powermode.enabled": true,
+    "powermode.enableShake": false,
     "search.exclude": {
         "**/*.map": true,
         "**/.DS_Store": true,
@@ -28,11 +42,10 @@
         "**/node_modules": true,
         "**/tmp": true
     },
-    "sublimeTextKeymap.promptV3Features": true,
     "terminal.external.osxExec": "iTerm.app",
     "terminal.integrated.fontFamily": "Source Code Pro for Powerline, Source Code Pro",
     "terminal.integrated.fontSize": 14,
     "typescript.npm": "/usr/local/bin/npm",
     "workbench.colorTheme": "wild-cherry",
-    "window.zoomLevel": 1
+    "window.zoomLevel": 0
 }
